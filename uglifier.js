@@ -18,11 +18,11 @@ const escaped = lines.map(val => {
     return '\n'
   }
 
-  return ` ui += L"${line}" + endl;\n`
+  return ` ui += L"${line}" + endl;`
 })
 
 const combined = escaped.reduce((acc, curr, i) => {
-  return `${acc} ${curr}`
+  return `${acc} \n ${curr}`
 }, ``)
 
 const final = `
@@ -32,5 +32,6 @@ ${combined}
 
 return ui;
 `
-console.log(combined)
+
+console.log(final)
 clipboardy.writeSync(final)
