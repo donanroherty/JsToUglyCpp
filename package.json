@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "clipboardy": "^2.1.0"
+    "clipboardy": "^3.0.0"
   }
 }
